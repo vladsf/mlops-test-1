@@ -6,6 +6,8 @@ jobs:
     runs-on: self-hosted
     steps:
     - uses: actions/checkout@v2
+    - name: Show env
+      run: set
     - name: Set up Python 3.10
       uses: actions/setup-python@v3
       with:
