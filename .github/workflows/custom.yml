@@ -14,6 +14,10 @@ jobs:
         python-version: "3.10"
 #      env:
 #        AGENT_TOOLSDIRECTORY: /opt/hostedtoolcache
+    - run: |
+        whoami
+        ls -l /opt/hostedtoolcache
+        python --version
     - name: Install dependencies
       run: |
         make install
